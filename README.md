@@ -14,7 +14,12 @@ the FPGA hardware to handle logic, rendering, and input signals.
 
 This project was developed to start exploring FPGA technology, as well 
 as digital hardware design. The rendering of the game and the logic are 
-directly implemented directly in hardware using Verilog.
+directly implemented directly in hardware using Verilog. 
+
+Challenges of this project include deciding how the different modules 
+all connect together and what data they should have access to. Making 
+each module fit together as part of a bigger system without being 
+hyper-specific was one of the more interesting aspects of the project.
 
 ## Hardware
 
@@ -29,11 +34,12 @@ directly implemented directly in hardware using Verilog.
 - Sprite graphics stored in memory
 - Player/button-based movement
 - Automated movement
+- Rendering priority system
 
 ## Project Structure
 
 ```text
-Basys3-VGA-Game/
-├── src/           # Verilog source files
-├── mem/           # Sprite and tile memory files
-└── constraints/   # Basys 3 pin constraints
+src/         → Verilog source files
+mem/         → Sprite and tile memory files
+constraints/ → Basys 3 pin constraints
+images-and-video/    → Project images and videos
