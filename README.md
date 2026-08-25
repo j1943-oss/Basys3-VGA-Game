@@ -4,6 +4,12 @@ A simple game/sprite-rendering-system, implemented using Verilog on a
 Digilent Basys 3 FPGA. The project generates a VGA video signal and uses 
 the FPGA hardware to handle logic, rendering, and input signals.
 
+## Demo
+
+<p align="center">
+  <img src="images-and-video/GameDemo.gif" width="700">
+</p>
+
 ## Overview
 
 This project was developed to start exploring FPGA technology, as well 
